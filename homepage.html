@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+  <!--<link rel="stylesheet" href="styling.css" />-->
+  <title>Document</title>
+  <style>
+  @viewport {
+    width: device-width ;
+    zoom: 1.0 ;
+  }
+  @-ms-viewport {
+    width: device-width ;
+  }
+  body{
+    background:black;
+  }
+  header{
+    position: absolute;
+    width:100%;
+    height:100%;
+    top:0%;
+    background: url('images/bg1.jpg');
+
+  }
+  #navigation{
+    position:fixed;
+      background:transparent;
+      left: 18%;
+      width: 60%;
+      z-index: 10;
+      border: 0px;
+
+  }
+  #tab{
+
+    color: black;
+    padding:1.25rem 1.5rem 1.25rem 1.5rem;
+    font-size: 3rem;
+    font-weight: bold;
+    background-color: transparent;
+    border:0px solid white;
+  }
+  #tab:hover
+  {
+    color:white;
+    background:black;
+    border:0px;
+    text-decoration: none;
+  }
+  #para{
+    position:absolute;
+    top:15%;
+    left:20%;
+    width:30%;
+    font-size: 0.2rem;
+  }
+  #buttons{
+    position:absolute;
+    top:60%;
+    left:30%;
+  }
+  section{
+    background: white;
+    width:100%;
+    height:100%;
+  }
+  #first
+  {
+    position: absolute;
+    top:100%;
+  }
+  #second{
+
+    background:#FA9530;
+    position: absolute;
+    top:200%;
+  }
+  #accordion{
+    position: absolute;
+    left:30%;
+    width:40%;
+    font-size:2rem;
+  }
+  #accordion a{
+    color: #FA9530;
+    font-size: 2.5rem;
+    font-weight: bold;
+  }
+  #third{
+
+    position: absolute;
+    top:300%;
+    background:url('bg2.jpg');
+    background-position:right;
+    background-size: 100%;
+  }
+  #fourth{
+    position: absolute;
+    top:400%;
+  }
+  #third p{
+    position: absolute;
+    top:20%;
+    left:20%;
+    width:40%;
+    font-size:5rem;
+    font-weight: bold;
+  }
+  #third input{
+    position: absolute;
+    top:40%;
+    left:20%;
+    padding:10px;
+    font-size: 2rem;
+    background: transparent;
+    border: 2px solid black;
+    border-radius: 25px;
+  }
+  #third input:hover
+  {
+    background: #F8DC28;
+    border: 2px solid #F8DC28;
+    border-radius: 25px;
+  }
+  #buttons input{
+    width:100%;
+    color:white;
+    padding:10px;
+    font-size: 2rem;
+    background: transparent;
+    border: 2px solid white;
+    border-radius: 25px;
+  }
+  #buttons input:hover{
+    background: #F8DC28;
+    border: 2px solid #F8DC28;
+    border-radius: 25px;
+  }
+  #fourth p{
+    font-size: 3rem;
+    color:gray;
+  }
+  footer{
+    position: absolute;
+    top:490%;
+    width: 100%;
+    height: 10%;
+    background:#7E7E7E;
+  }
+  footer a
+  {
+    color:black;
+    font-size:bold;
+  }
+  footer a:hover{
+    color:black;
+    text-decoration: none;
+  }
+
+  </style>
+</head>
+<body>
+
+
+  <nav class="navbar navbar-inverse" id="navigation">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="#"><img src="logo.png" alt="Image not found" width=40px></a>
+      </div>
+      <div class="collapse navbar-collapse" id="myNavbar">
+        <ul class="nav navbar-nav navbar-right">
+          <li id="tab">Visit Store</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+
+  <header>
+    <img src="pic1.jpg" alt="Image Not Found" width=20% height=45% style="position:absolute; right:25%; top:25%">
+    <div id="para" style="color:white;">
+      <br />
+      <br />
+    <h2>Love Comics?</h2>
+    <br />
+    <br />
+    <h2>Wouldnt it be cool to read them daily</h2>
+    <br />
+    <h2>Get Subscriptions of latest comics for a year</h2>
+    </div>
+    <div id="buttons">
+      <input type="button" class="btn btn-outline btn-xl js-scroll-trigger" value="Start your 30 days free trial"><br /><br />
+      <input type="button" class="btn btn-outline btn-xl js-scroll-trigger" value="Buy Subscription">
+    </div>
+  </header>
+
+
+
+  <section id="first">
+    <div id="outer">
+      <div style="position:absolute; top:15%; width:100%; height:85%;">
+        <center><h2>DISCOVER WHAT ALL THE BUZZ IS ABOUT</h2></center>
+        <center><h3 style="color:gray">Check out our digital subscription</h3></center>
+        <img src="pic1.jpg" alt="Image Not Found" width=20% height=55% style="position:absolute; right:15%; top:25%">
+        <div style="position:absolute; top:25%;left:20%; font-size:170%; width:40%;"><p>Award Winning Comics. Best Stories. Best Graphics. All at your fingertips! And that's not all. You get chances to become a character in the comic, you also get opportunities to be an author or an artist in certain projects. And many more such personalized and exciting stuff.
+<br/><br />
+For just 300 Rs! So basically you get to read new comics at less than 1 Re. a day! Isn't that even more economical than the good old library days, where you had to get comics issued for a week and then come home and read?
+<br /><br />
+So what are you waiting for? Go ahead and subscribe! Or if you would want to try it out, enjoy our free 30 days trial and then decide if TBS Planet is for you or not!</p></div>
+      </div>
+    </div>
+  </section>
+
+
+
+
+  <section id="second">
+    <div style="position:absolute; top:20%; width:100%">
+<center><p style="font-size:5rem; font-weight:bolder; color:black;" color=black>Have Queries?</p></center>
+<center><h4 font-weight=bold color=gray>Refer our FAQ's</h4></center><br /><br />
+<!--Accordion wrapper-->
+<div style="text-align: center;">
+<div class="panel-group" id="accordion">
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        <h4 class="panel-title">
+          <a data-toggle="collapse" data-parent="#accordion" href="#collapse1">Do I get to choose my favourite genres?</a>
+        </h4>
+      </div>
+      <div id="collapse1" class="panel-collapse collapse">
+        <div class="panel-body">Yes, of course! Action Superheroes to Horror to Comedies to Corporate/ Startup Humor to Mythology - You can mix and match whichever genres suit you best! Very soon we will be launching Educational Genre as well for kids where students can read their subjects in comic fun style.</div>
+      </div>
+    </div>
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        <h4 class="panel-title">
+          <a data-toggle="collapse" data-parent="#accordion" href="#collapse2">Do i get to choose the subscription in my native language?</a>
+        </h4>
+      </div>
+      <div id="collapse2" class="panel-collapse collapse">
+        <div class="panel-body">Yes absolutely! You can choose your preferred language. As of now, we have comics ready in these languages - English, Hindi, Marathi, Bangla, Telugu and Kannada. If your preferred language is not mentioned here, don't worry. We keep adding new languages every month so keep checking back.</div>
+      </div>
+    </div>
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        <h4 class="panel-title">
+          <a data-toggle="collapse" data-parent="#accordion" href="#collapse3">Is it possible to gift the subscription to anyone?</a>
+        </h4>
+      </div>
+      <div id="collapse3" class="panel-collapse collapse">
+        <div class="panel-body">Yes, you can gift the subscriptions to anyone. Just don't forget to mention their number in the contact number section while subscribing so we can get in touch with them easily.</div>
+      </div>
+    </div>
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        <h4 class="panel-title">
+          <a data-toggle="collapse" data-parent="#accordion" href="#collapse4">Where do I get to read the comics?</a>
+        </h4>
+      </div>
+      <div id="collapse4" class="panel-collapse collapse">
+        <div class="panel-body">We currently send you comics on your Whatsapp number. Very soon we will be having our own platform ready as well. Then you can even log in to our website and app and read it right there. Of course, Whatsapp service will still continue!</div>
+      </div>
+    </div>
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        <h4 class="panel-title">
+          <a data-toggle="collapse" data-parent="#accordion" href="#collapse5">I am an artist/ writer and I want to contribute too. Is that possible?</a>
+        </h4>
+      </div>
+      <div id="collapse5" class="panel-collapse collapse">
+        <div class="panel-body">Yes, we accept submissions from our subscribers. In fact, we run specific contests for our subscribers so they get the opportunity to become a creator. We will keep you updated.</div>
+      </div>
+    </div>
+  </div>
+</div>
+<!--/.Accordion wrapper-->
+  </section>
+
+<section id="third">
+  <div>
+    <p style="text-align:left">Stop thinking and start exploring</p>
+    <input type="button" value="Subscribe Digital comics for a year">
+  </div>
+</section>
+
+
+
+<section id="fourth">
+  <div style="position:absolute; top:20%; left:10%; width:20%; height:20%;">
+    <center><img src="whatsapp-logo.png" width=20% height=20% alt=""></center>
+    <br />
+    <center><p>Delivered directly through Whatsapp</p></center>
+  </div>
+
+  <div style="position:absolute; top:20%; left:40%; width:20%; height:20%;">
+    <center><img src="family-logo.png" width=20% height=20% alt=""></center>
+    <br />
+    <center><p>Family friendly</p></center>
+  </div>
+
+  <div style="position:absolute; top:20%; left:70%; width:20%; height:20%;">
+    <center><img src="popcorn-logo.png" width=20% height=20% alt=""></center>
+    <br />
+    <center><p>Fully Entertaining</p></center>
+  </div>
+  <div style="position:absolute; top:40%; width:100%; height:60%; background:orange"><br />
+  <center>  <p style="font-size:5rem; color:black;">We are SOCIAL!!</p></center>
+
+  <div style="position:absolute; top:25%; left:35%; width:20%; height:20%;">
+    <center><a href="#"><img src="facebook-logo.png" width=20% height=20% alt=""></a></center>
+    <br />
+
+  </div>
+  <div style="position:absolute; top:25%; left:45%; width:20%; height:20%;">
+    <center><a href="#"><img src="instagram-logo.png" width=20% height=20% alt=""></a></center>
+    <br />
+
+  </div>
+  </div>
+</section>
+<footer>
+<div style="text-align:center; font-size:1.5rem;">
+  <br />
+  <a href="#">Home</a><br />
+  <a href="#">Contact Us</a><br />
+<a href="#">Terms</a>
+</div>
+
+</footer>
+</body>
+</html>
